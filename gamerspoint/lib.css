@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'po';
+  src: url('pot.ttf'); /* IE9 Compat Modes */
+  src: url('pot.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('pot.ttf') format('woff'), /* Pretty Modern Browsers */
+       url('pot.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+nav,td a{color:#fff}
+#menuc,#menuh,td a{text-decoration:none}
+#menu,#menub{position:fixed;float:right;right:0}
+#close,#menub{cursor:pointer}
+#menu table{float:right;right:4px;top:9px
+}td a{font-size:15px;padding:15px}
+#coolintro{height:100%;width:100%;background-image:url(icon.bmp);overflow:hidden;max-height:100%;max-width:100%;position:relative;background-attachment: fixed;background-repeat: no-repeat;background-position: left center;background-size: 100% 100%;transition:height 1s;}
+#arrow,h2,p2{color:#fff;position:absolute;top:30%;left:0;width:100%;text-align:center}
+#arrow{top:90%}
+p2{top:50%}
+nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rgba(0,0,0,.5);width:100%;z-index:9999999}
+#ytp,#ztp{opacity:0;height:100px;width:100px; visibility:hidden;padding-top:40px;transition:visibility 2s, opacity 2s, padding-top 2s;transition-timing-function:ease-in;padding-left:20px}
+#menuc,#menuh{color:#000}
+#menuh{padding:10px;font-size:30px}
+body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
+#menuc{padding:10px;font-size:25px;color:#818181;display:block}
+#menu{width:0;background-color:#e9e9e9;height:100%;z-index:9999999999;top:0;overflow-x:hidden;padding-top:20px;transition:width 0.2s ;}
+#close{padding-left:10px;top:0}
+#menub{padding:13px}
+#heading{padding:20px;font-size:30px;cursor:default}
+#infob{background:#00E573;padding:40px 0 0 0px;width:100%;height:450px;overflow:hidden;padding:12vw 0 0 0px;}
+h3{float:right;right:0px;text-align:right;color:white;width:50%;position:relative;line-height:200%;}
+@media screen and (max-height:450px){
+#coolintro{background-size:100% 130%;height:130%}
+.sidenav{padding-top:10px}
+.sidenav a{font-size:18px}
+}
+@media only screen and (max-width:380px){
+h3{line-height:110%;}
+#ytp,#ztp{padding-left:10px;}
+}
+#infob.dodgerblue{
+	background-color: dodgerblue;
+}
