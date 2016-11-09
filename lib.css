@@ -11,7 +11,7 @@ nav,td a{color:#fff}
 #close,#menub{cursor:pointer}
 #menu table{float:right;right:4px;top:9px
 }td a{font-size:15px;padding:15px}
-#coolintro{height:100%;width:100%;background-image:url(icon.png);overflow:hidden;max-height:100%;max-width:100%;position:relative;background-attachment: fixed;background-repeat: no-repeat;background-position: left center;background-size: 100% 100%;transition:height 1s;}
+#coolintro{height:100%;width:100%;background-image:url(icon.bmp);overflow:hidden;max-height:100%;max-width:100%;position:relative;background-attachment: fixed;background-repeat: no-repeat;background-position: left center;background-size: 100% 100%;transition:height 1s;}
 #arrow,h2,p2{color:#fff;position:absolute;top:30%;left:0;width:100%;text-align:center}
 #arrow{top:90%}
 p2{top:50%}
