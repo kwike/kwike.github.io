@@ -3,5 +3,6 @@ share links by sumo me
 facebook- https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkwike.github.io%2F
 twitter - https://twitter.com/intent/tweet?url=https%3A%2F%2Fkwike.github.io%2F&text=kwike
 googlep - https://plus.google.com/share?url=https%3A%2F%2Fkwike.github.io%2F
-mail    - mailto:?Subject=Kwike&body=hey, i have like the kwike series of vedios and app on youtube and their website.visit now on https://kwike.github.io
+mail    - mailto:?Subject=Kwike&body=hey, i%20have%20liked%20the%20kwike%20series%20of%20videos%20and%20app%20on%20youtube%20their%20website.visit%20now%20on%20https%3a%2f%2fkwike.github.io
 fb like - https://sumome.com/apps/share/facebook-like?href=https%3A%2F%2Fkwike.github.io%2F
+whatsapp- whatsapp://send?text=kwike%20https%3a%2f%2fkwike.github.io%2f
