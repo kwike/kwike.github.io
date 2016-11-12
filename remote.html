@@ -7,31 +7,56 @@
   
   
   <br><br><br><br><br><br>
-  int led = 13;
-void setup()
-{
-  Serial.begin(9600);
   
-  pinMode(led,OUTPUT);
-  digitalWrite(led,LOW);
-}
-void loop()
-{
- if(Serial.available())
- {
-   String value = Serial.readStringUntil('\n');
-   Serial.println(value);
-   if(value == "on")
-   {
-     digitalWrite(led,HIGH);
-   }
-   else if(value == "off")
-   {
-     digitalWrite(led,LOW);
-   }
-  
- }
-}
+int rp = 1;
+int rn = 2;
+int lp = 3;
+int ln = 4;
 
+void setup() {
+  Serial.begin(9600);
+  pinMode(rp,OUTPUT);
+  pinMode(rn,OUTPUT);
+  pinMode(lp,OUTPUT);
+  pinMode(ln,OUTPUT);
+  digitalWrite(rp,LOW);
+  digitalWrite(rn,LOW);
+  digitalWrite(lp,LOW);
+  digitalWrite(ln,LOW);
+  } 
+  void loop() { 
+    if(Serial.available()) {
+      String value = Serial.readStringUntil('\n');
+      Serial.println(value);
+      if(value == "f") {
+       digitalWrite(rn,LOW); 
+          digitalWrite(rp,HIGH); 
+          digitalWrite(ln,LOW); 
+          digitalWrite(lp,HIGH); 
+        }else if(value == "b") { 
+          digitalWrite(lp,LOW); 
+          digitalWrite(ln,HIGH); 
+          digitalWrite(rp,LOW); 
+          digitalWrite(rn,HIGH); 
+          }else if(value == "r") { 
+          digitalWrite(lp,HIGH); 
+          digitalWrite(ln,LOW); 
+          digitalWrite(rn,LOW); 
+          digitalWrite(rp,LOW); 
+          }else if(value == "l") { 
+          digitalWrite(lp,LOW); 
+          digitalWrite(ln,LOW); 
+          digitalWrite(rn,LOW); 
+          digitalWrite(rp,HIGH); 
+          }else if(value == "s") { 
+          digitalWrite(lp,LOW); 
+          digitalWrite(ln,LOW); 
+          digitalWrite(rp,LOW); 
+          digitalWrite(rn,LOW); 
+          }
+          }
+          }
+
+        
   </font>
   </body>
