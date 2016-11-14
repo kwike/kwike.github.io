@@ -74,7 +74,9 @@ nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rg
 	 #sharebtn:hover,#closeshare:hover{
 		 box-shadow:5px 5px 5px rgba(1,1,1,0.5);
 	 }
-	 #closeshare{display:none;padding:50%;}	 
+	 #closeshare{display:none;}	 
+	 #crossb{padding:5px;}
+		 
  </style>
  </head>
 <body id="body" onload="loaded()">
@@ -111,7 +113,7 @@ nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rg
 	  </div>
 <div id="sharebtn" onclick="shareopen()"><img src="https://raw.githubusercontent.com/kwike/images/master/share-2-icon.png" alt="share" height="50" width="50">
 	</div>
-	<span id="closeshare" onclick="shareclose()"><i class="material-icons">&#xE5CD;</i></span>
+	<span id="closeshare" onclick="shareclose()"><i class="material-icons" id="crossb">&#xE5CD;</i></span>
 
 </body>
 </html>
