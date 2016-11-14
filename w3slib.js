@@ -1,3 +1,24 @@
+/*for menu button*/
+function openNav() {
+    document.getElementById("menu").style.width = "230px";
+}
+
+function closeNav() {
+    document.getElementById("menu").style.width = "0";
+}
+
+function get(name){
+   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      return decodeURIComponent(name[1]);
+}
+function loaded(){
+	if (get('s') == undefined){
+document.getElementById("iframe").src = "sites/index.html";	
+}else{
+document.getElementById("iframe").src = get('s');
+}
+}
+/*w3schools library*/
 var w3DataObject = {};
 function w3DisplayData(id, data) {
     var htmlObj, htmlTemplate, html, arr = [], a, l, rowClone, x, j, i, ii, cc, repeat, repeatObj, repeatX = "";
