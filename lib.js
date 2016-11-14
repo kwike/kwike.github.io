@@ -21,9 +21,13 @@ document.documentElement.body.src = get('s');
 /*for share button*/
 function shareopen() {
     document.getElementById("share").style.width = "230px";
+    document.getElementById("closeshare").style.display = "block";
+	document.getElementById("sharebtn").style.display = "none";
 }
 function shareclose() {
     document.getElementById("share").style.width = "0px";
+	 document.getElementById("closeshare").style.display = "none";
+	document.getElementById("sharebtn").style.display = "block";
 }
 /*w3schools library*/
 var w3DataObject = {};
