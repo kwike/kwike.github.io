@@ -6,17 +6,24 @@ function openNav() {
 function closeNav() {
     document.getElementById("menu").style.width = "0";
 }
-
+/*for getting link as php style*/
 function get(name){
    if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
       return decodeURIComponent(name[1]);
 }
 function loaded(){
 	if (get('s') == undefined){
-document.getElementById("iframe").src = "sites/index.html";	
+document.documentElement.body.src = document.location.href;	
 }else{
-document.getElementById("iframe").src = get('s');
+document.documentElement.body.src = get('s');
 }
+}
+/*for share button*/
+function shareopen() {
+    document.getElementById("share").style.width = "230px";
+}
+function shareclose() {
+    document.getElementById("share").style.width = "0px";
 }
 /*w3schools library*/
 var w3DataObject = {};
