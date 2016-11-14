@@ -41,13 +41,21 @@ nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rg
 	width:0px;
 	height:240px;
 	z-index: 99999999999999999999999999;
-	overflow:hidden;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	transition:width 1s;
 	}
 #shareimg{
 	color:white;
 	text-align:center;
-	width:20px;
-	height:20px;
+	width:60px;
+	height:60px;
+	padding:30px;
+	background-color:dodgerblue;
+	transition:background-color 0.5s;
+	 }
+	 #shareimg:hover{
+		 background-color:blue;
 	 }
 #sharebtn{
 	
@@ -90,12 +98,12 @@ nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rg
 </div>
  <div id="share">
 	
-	 <b id="shareimg">S</b><br>
-	 <b id="shareimg">h</b><br>
-	 <b id="shareimg">a</b><br>
-	 <b id="shareimg">r</b><br>
-	 <b id="shareimg">e</b><br>
-  <a id="shareimg" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkwike.github.io%2F"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/facebook.png" alt="facebook"></a>
+	 <b id="shareimg">S</b>
+	 <b id="shareimg">h</b>
+	 <b id="shareimg">a</b>
+	 <b id="shareimg">r</b>
+	 <b id="shareimg">e</b>
+         <a id="shareimg" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkwike.github.io%2F"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/facebook.png" alt="facebook"></a>
 	 <a id="shareimg" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkwike.github.io%2F&text=kwike"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/twitter.png" alt="twitter"></a>
 	 <a id="shareimg" href="https://plus.google.com/share?url=https%3A%2F%2Fkwike.github.io%2F"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/googlep.png" alt="google plus"></a>
 	 <a id="shareimg" href=" mailto:?Subject=Kwike&body=hey, i%20have%20liked%20the%20kwike%20series%20of%20videos%20and%20app%20on%20youtube%20their%20website.visit%20now%20on%20https%3a%2f%2fkwike.github.io"><img id="shareimg" src="https://raw.githubusercontent.com/kwike/images/master/email.png" alt="mail"></a>
