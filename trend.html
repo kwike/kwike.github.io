@@ -10,16 +10,23 @@ scale=1"name=viewport>
 <meta content="trending services" name=description>    </head>
 <body id="body" onscroll="myFunction()" onload="loaded()">
 <style>
-#cc{
- @media (max-width: 700px) {
-		width: 100%;
-	}
- display: -webkit-flex;
+	#cards{display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
 	justify-content: center;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+		margin-top: 15px;
+	padding: 1.5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+#cc{
+ @media (max-width: 700px) {
+		width: 100%;
+	}
+ display:block;
  margin:20px;
  text-decoration:none;
  overflow:hidden;
@@ -49,6 +56,7 @@ padding:10px;
 height:30%;
 }
 </style>
+	<div id="cards">
  <a id="cc" href="https://kwike.github.io/trends/rkwike/?id=bOfkgOb9GvM">
 <img id="fimg" src="https://img.youtube.com/vi/bOfkgOb9GvM/default.jpg">
 <span id="text">INJUSTICE GOD AMONG US GAMPLAY EARTH 2 SOLOMON GRUNDY & JUSTICE LEAUGE WONDER WOMAN</span>
@@ -69,5 +77,6 @@ height:30%;
 <img id="fimg" src="https://kwike.github.io/sites/cool.gif">
 <span id="text">Started Kwike | ET website of kwike made</span>
 </a>
+	</div>
 </body>
 </html>
