@@ -37,7 +37,7 @@ scale=1"name=viewport>
 w3IncludeHTML();
 </script>
 <div id="coolintro">
-<h2 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+<h2> <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div></h2>
 <p2 id="demo"></p2> 
 <a href="#down"><i class="material-icons" id="arrow">&#xE5DB;</i></a>
@@ -79,9 +79,6 @@ document.getElementById("ytp").style.paddingTop="10";
  <style>
   #coolintro{height:700px;width:100%;background-image:url(/sites/cool.gif);}
  </style>
-  <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
-
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -94,11 +91,11 @@ document.getElementById("ytp").style.paddingTop="10";
       //    after the API code downloads.
       var player;
       function onYouTubeIframeAPIReady() {
-      
+       document.getElementById("demo").innerHTML = get('title');
         player = new YT.Player('player', {
           height: '390',
           width: '640',
-          videoId: 'M7lc1UVf-VE',
+          videoId: get('id'),
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
