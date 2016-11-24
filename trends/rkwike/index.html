@@ -91,10 +91,10 @@ document.getElementById("ytp").style.paddingTop="10";
       //    after the API code downloads.
       var player;
       function onYouTubeIframeAPIReady() {
-     
+     var intViewportWidth = window.innerWidth;
         player = new YT.Player('player', {
           height: '390',
-          width: '640',
+          width:  intViewportWidth,
           videoId: get('id'),
           events: {
             'onReady': onPlayerReady,
