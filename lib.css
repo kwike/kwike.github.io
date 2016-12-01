@@ -26,4 +26,4 @@ body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
 @media only screen and (max-width:380px){#infob h3{line-height:110%}
 	#ytp,#ztp{padding-left:10px}}
 
-#cooli{background-color:green;padding-top:30px;padding-bottom:30px;width:100%;#00CE00;}
+#infbox{background-color:green;padding-top:30px;padding-bottom:30px;width:100%;#00CE00;}
