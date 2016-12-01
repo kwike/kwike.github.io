@@ -9,7 +9,7 @@ body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
 @font-face{font-family:'po';src:url(pot.ttf);src:url(pot.ttf?#iefix) format('embedded-opentype'),url(pot.ttf) format('woff'),url(pot.ttf) format('truetype'),}
 
 
-#menuincluded{height:0;top:0;overflow:visible;position:fixed}
+#menuincluded{height:50px;top:0;overflow:visible;background-color:black;}
 
 #ytp,#ztp{opacity:0;height:100px;width:100px;visibility:hidden;padding-top:40px;transition:visibility 2s,opacity 2s,padding-top 2s;transition-timing-function:ease-in;-webkit-transition:visibility 2s,opacity 2s,padding-top 2s;-webkit-transition-timing-function:ease-in;padding-left:20px}
 
