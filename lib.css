@@ -1,11 +1,11 @@
 @font-face{font-family:'po';src:url(pot.ttf);src:url(pot.ttf?#iefix) format('embedded-opentype'),url(pot.ttf) format('woff'),url(pot.ttf) format('truetype'),}
-#cooli{height:800px;width:100%;background-color:dodgerblue}
+#cooli{height:800px;width:100%;background-color:dodgerblue;top:0px;}
 #cooli h1{font-size:50px;color:white;width:100%}
 #cooli #description{font-size:30px;color:white;width:100%}
 body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
-#infob{background:#00E573;padding:40px 0 0 0;width:100%;height:450px;overflow:hidden;padding:12vw 0 0 0}
+#infob{background:#00E573;position:absolute;padding:40px 0 0 0;width:100%;height:450px;overflow:hidden;padding:12vw 0 0 0}
 #infob h3{float:right;right:0;text-align:right;color:white;width:50%;position:relative;line-height:200%}
-@media screen and (max-height:450px){#coolintro{background-size:100% 130%;height:130%}.sidenav{padding-top:10px}
+@media screen and (max-height:450px){.sidenav{padding-top:10px}
 .sidenav a{font-size:18px}}
 @media only screen and (max-width:380px){#infob h3{line-height:110%}#ytp,#ztp{padding-left:10px}}
 @font-face{font-family:'po';src:url(pot.ttf);src:url(pot.ttf?#iefix) format('embedded-opentype'),url(pot.ttf) format('woff'),url(pot.ttf) format('truetype'),}
@@ -17,7 +17,7 @@ body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
 
 body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
 
-#infob{background:#00E573;padding:40px 0 0 0;width:100%;height:450px;overflow:hidden;padding:12vw 0 0 0;position:absolute}
+#infob{background:#00E573;padding:40px 0 0 0;width:100%;height:450px;overflow:hidden;padding:12vw 0 0 0;}
 #infob h3{float:right;right:0;text-align:right;color:white;width:50%;position:relative;line-height:200%}
 @media screen and (max-height:450px){
 	#coolintro{background-size:100% 100%;height:130%}
@@ -25,4 +25,4 @@ body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
 	.sidenav a{font-size:18px}}
 @media only screen and (max-width:380px){#infob h3{line-height:110%}
 	#ytp,#ztp{padding-left:10px}}
-#infob.dodgerblue{background-color:dodgerblue}
+
