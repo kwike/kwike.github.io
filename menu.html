@@ -1,93 +1,31 @@
-<!doctype html>
-<html>
-<Head>
-<!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#1e90ff">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#1e90ff">
-<!-- iOS Safari -->
-<meta name="apple-mobile-web-app-status-bar-style" content="#1e90ff">
-<!-- basicblue trademark is rgb(63,72,204); -->
-<!--<script src="//load.sumome.com/" data-sumo-site-id="5a7c79bb3d099660831dcdf197929478970d112f39d050070f7c14c50abc81f2" async="async"></script>-->
-
-<meta content="width=device-width,initial-scale=1"name=viewport>
-
-<link rel="icon" href="https://raw.githubusercontent.com/kwike/images/master/c-icon.png">
  <style>
-	
- body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
- @font-face {
-  font-family: 'po';
-  src: url('pot.ttf'); /* IE9 Compat Modes */
-  src: url('pot.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('pot.ttf') format('woff'), /* Pretty Modern Browsers */
-       url('pot.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
- nav,td a{color:#fff}
- #menuc,#menuh,td a{text-decoration:none}
-#menu,#menub{position:fixed;float:right;right:0}
-#close,#menub{cursor:pointer}
-#menu table{float:right;right:4px;top:9px
-}
-td a{font-size:15px;padding:15px}
-nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rgba(0,0,0,.5);width:100%;z-index:9999999}
-#menuc,#menuh{color:#000}
-#menuh{padding:10px;font-size:30px}
-#menuc{padding:10px;font-size:25px;color:#818181;display:block}
-#menu{width:0;background-color:#e9e9e9;height:100%;z-index:9999999999;top:0;overflow-x:hidden;padding-top:20px;transition:width 0.2s ;}
-#close{padding-left:10px;top:0}
-#menub{padding:13px}
-#heading{padding:20px;font-size:30px;cursor:default}
-#share{
-	background: dodgerblue;
-	left:0px;
-	position:fixed;
-	top:50px;
-	width:0px;
-	height:240px;
-	z-index: 99999999999999999999999999;
-	overflow-x:hidden;
-	overflow-y:scroll;
-	transition:width 1s;
-	}
-#shareimg{
-	color:white;
-	text-align:center;
-	width:60px;
-	height:60px;
-	padding:30px;
-	background-color:dodgerblue;
-	transition:background-color 0.5s;
-	 }
-	 #shareimg:hover{
-		 background-color:blue;
-	 }
-#sharebtn,#closeshare,#searchbtn{
-	position:fixed;
-	z-index:9999999999999999999999999999999999999999999;
-	height:50px;
-	width:50px;
-	border-radius:50%;
-	box-shadow:3px 3px 3px rgba(1,1,1,0.5);
-	transition:box-shadow 0.5s;
-	bottom:10px;
-	right:10px;
-	background-color:purple;
-	
-	 }
-	
-	 #sharebtn:hover,#closeshare:hover,#searchbtn:hover{
-		 box-shadow:5px 5px 5px rgba(1,1,1,0.5);
-	 }
-	 #closeshare{display:none;}	 
-	 #crossb{padding:15px;color:white;}
-	 #searchbtn{
-		 bottom:70px;
-		 background-color:dodgerblue;
-	 }	 
+	#menu,#share{width:0;overflow-x:hidden}
+	 #menu,#menub,#share,nav{position:fixed}
+	 #crossb,#menut td a{padding:15px}
+	 #crossb,#shareimg,nav,#menut td a{color:#fff}
+	 body{margin:0;font-family:po,'century gothic',arial;max-width:100%}
+	 @font-face{font-family:po;src:url(pot.ttf);src:url(pot.ttf?#iefix) format('embedded-opentype'),url(pot.ttf) format('woff'),url(pot.ttf) format('truetype'),}
+	 #menuc,#menuh,#menut td a{text-decoration:none}
+	 #menu,#menub{float:right;right:0}
+	 #close,#menub{cursor:pointer}
+	 #menu table{float:right;right:4px;top:9px}
+	#menut td a{font-size:15px}
+	 nav{height:50px;text-align:right;top:0;display:flex;background:rgba(0,0,0,.5);width:100%;z-index:9999999}
+	 #menuc,#menuh{color:#000}
+	 #menuh{padding:10px;font-size:30px}
+	 #menuc{padding:10px;font-size:25px;color:#818181;display:block}
+	 #menu{background-color:#e9e9e9;height:100%;z-index:9999999999;top:0;padding-top:20px;transition:width .2s}
+	 #close{padding-left:10px;top:0}
+	 #menub{padding:13px}
+	 #heading{padding:20px;font-size:30px;cursor:default}
+	 #share{background:#1e90ff;left:0;top:50px;height:240px;z-index:99999999999999999999999999;overflow-y:scroll;transition:width 1s}
+	 #shareimg{text-align:center;width:60px;height:60px;padding:30px;background-color:#1e90ff;transition:background-color .5s}
+	 #shareimg:hover{background-color:#00f}
+	 #closeshare,#searchbtn,#sharebtn{position:fixed;z-index:9999999999999999999999999999999999999999999;height:50px;width:50px;border-radius:50%;box-shadow:3px 3px 3px rgba(1,1,1,.5);transition:box-shadow .5s;bottom:10px;right:10px;background-color:purple}
+	 #closeshare:hover,#searchbtn:hover,#sharebtn:hover{box-shadow:5px 5px 5px rgba(1,1,1,.5)}
+	 #closeshare{display:none}
+	 #searchbtn{bottom:70px;background-color:#1e90ff}
  </style>
- </head>
-<body id="body" onload="loaded()">
 	<link href=/lib.css rel=stylesheet>
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel=stylesheet>
  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One"rel=stylesheet>
@@ -97,7 +35,7 @@ nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rg
 <div id="menu"><strong onclick="closeNav()">
 <i class="material-icons" id="close">&#xE5CD;</i>
 </strong>
-<table>
+<table id="menut">
 <tr><th><a id="menuh" href="/">Kwike</a></th></tr><tr>
 <td><a id="menuc" href="/rkwike">RKwike</a></td></tr><tr>
 <td><a id="menuc" href="/gamerspoint">Gamerspoint</a></td></tr><tr>
@@ -136,5 +74,3 @@ nav{height:50px;text-align:right;top:0;position:fixed;display:flex;background:rg
   };
   firebase.initializeApp(config);
 </script>
-</body>
-</html>
