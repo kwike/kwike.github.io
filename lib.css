@@ -3,8 +3,8 @@
 #cooli h1{font-size:50px;color:white;width:100%}
 #cooli #description{font-size:30px;color:white;width:100%}
 body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
-#infob{background:#00E573;position:absolute;padding:40px 0 0 0;width:100%;height:450px;overflow:hidden;padding:12vw 0 0 0}
-#infob h3{float:right;right:0;text-align:right;color:white;width:50%;position:relative;line-height:200%}
+
+#infbox h3{float:right;right:0;text-align:right;color:white;width:50%;position:relative;line-height:200%}
 @media screen and (max-height:450px){.sidenav{padding-top:10px}
 .sidenav a{font-size:18px}}
 @media only screen and (max-width:380px){#infob h3{line-height:110%}#ytp,#ztp{padding-left:10px}}
@@ -16,9 +16,7 @@ body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
 #ytp,#ztp{opacity:0;height:100px;width:100px;visibility:hidden;padding-top:40px;transition:visibility 2s,opacity 2s,padding-top 2s;transition-timing-function:ease-in;-webkit-transition:visibility 2s,opacity 2s,padding-top 2s;-webkit-transition-timing-function:ease-in;padding-left:20px}
 
 body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
-
-#infob{background:#00E573;padding:40px 0 0 0;width:100%;height:450px;overflow:hidden;padding:12vw 0 0 0;z-index:0;}
-#infob h3{float:right;right:0;text-align:right;color:white;width:50%;position:relative;line-height:200%}
+#infbox h3{float:right;right:0;text-align:right;color:white;width:50%;position:relative;line-height:200%}
 @media screen and (max-height:450px){
 	#coolintro{background-size:100% 100%;height:130%}
 	.sidenav{padding-top:10px}
