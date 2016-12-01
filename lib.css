@@ -3,8 +3,6 @@
 #cooli h1{font-size:50px;color:white;width:100%}
 #cooli #description{font-size:30px;color:white;width:100%}
 body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
-
-#infbox h3{float:right;right:0;text-align:right;color:white;width:50%;position:relative;line-height:200%;z-index:0;}
 @media screen and (max-height:450px){.sidenav{padding-top:10px}
 .sidenav a{font-size:18px}}
 @media only screen and (max-width:380px){#infob h3{line-height:110%}#ytp,#ztp{padding-left:10px}}
@@ -24,5 +22,5 @@ body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
 @media only screen and (max-width:380px){#infob h3{line-height:110%}
 	#ytp,#ztp{padding-left:10px}}
 
-#infbox{background:#00E573;padding-top:30px;padding-bottom:30px;width:100%;z-index:-99999;}
+#infbox{background:#00E573;padding-top:30px;padding-bottom:30px;width:100%;}
 #infbox h3{float:right;right:0;text-align:right;color:white;width:50%;line-height:200%;}
