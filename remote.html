@@ -9,55 +9,55 @@
   <br><br><br><br><br><br>
   
 
-int rp = 2;
-int rn = 3;
-int lp = 4;
-int ln = 5;
+int rp = 2;<br>
+int rn = 3;<br>
+int lp = 4;<br>
+int ln = 5;<br><br>
 
-void setup() {
-  Serial.begin(9600);
-  pinMode(rp,OUTPUT);
-  pinMode(rn,OUTPUT);
-  pinMode(lp,OUTPUT);
-  pinMode(ln,OUTPUT);
-  digitalWrite(rp,LOW);
-  digitalWrite(rn,LOW);
-  digitalWrite(lp,LOW);
-  digitalWrite(ln,LOW);
-  } 
-  void loop() { 
-    if(Serial.available()) {
-      String value = Serial.readStringUntil('\n');
-      Serial.println(value);
-      if(value == "f") {
-       digitalWrite(rn,LOW); 
-          digitalWrite(rp,HIGH); 
-          digitalWrite(ln,LOW); 
-          digitalWrite(lp,HIGH); 
-        }else if(value == "b") { 
-          digitalWrite(lp,LOW); 
-          digitalWrite(ln,HIGH); 
-          digitalWrite(rp,LOW); 
-          digitalWrite(rn,HIGH); 
-          }else if(value == "r") { 
-          digitalWrite(lp,HIGH); 
-          digitalWrite(ln,LOW); 
-          digitalWrite(rn,LOW); 
-          digitalWrite(rp,LOW); 
-          }else if(value == "l") { 
-          digitalWrite(lp,LOW); 
-          digitalWrite(ln,LOW); 
-          digitalWrite(rn,LOW); 
-          digitalWrite(rp,HIGH); 
-          }else if(value == "s") { 
-          digitalWrite(lp,LOW); 
-          digitalWrite(ln,LOW); 
-          digitalWrite(rp,LOW); 
-          digitalWrite(rn,LOW); 
-          }
-          }
-          }
-
-        
+void setup() {<br>
+  Serial.begin(9600);<br>
+  pinMode(rp,OUTPUT);<Br>
+  pinMode(rn,OUTPUT);<Br>
+  pinMode(lp,OUTPUT);<Br>
+  pinMode(ln,OUTPUT);<Br>
+  digitalWrite(rp,LOW);<Br>
+  digitalWrite(rn,LOW);<Br>
+  digitalWrite(lp,LOW);<Br>
+  digitalWrite(ln,LOW);<Br>
+  } <Br>
+  void loop() { <Br>
+    if(Serial.available()) {<Br>
+      String value = Serial.readStringUntil('\n');<Br>
+      Serial.println(value);<Br>
+      if(value == "f") {<Br>
+       digitalWrite(rn,LOW);<Br> 
+          digitalWrite(rp,HIGH);<Br> 
+          digitalWrite(ln,LOW); <Br>
+          digitalWrite(lp,HIGH); <Br>
+        }else if(value == "b") { <Br>
+          digitalWrite(lp,LOW); <Br>
+          digitalWrite(ln,HIGH); <Br>
+          digitalWrite(rp,LOW); <Br>
+          digitalWrite(rn,HIGH); <Br>
+          }else if(value == "r") { <Br>
+          digitalWrite(lp,HIGH); <Br>
+          digitalWrite(ln,LOW); <Br>
+          digitalWrite(rn,LOW); <Br>
+          digitalWrite(rp,LOW); <Br>
+          }else if(value == "l") { <Br>
+          digitalWrite(lp,LOW); <Br>
+          digitalWrite(ln,LOW); <Br>
+          digitalWrite(rn,LOW); <Br>
+          digitalWrite(rp,HIGH); <Br>
+          }else if(value == "s") { <Br>
+          digitalWrite(lp,LOW); <Br>
+          digitalWrite(ln,LOW); <Br>
+          digitalWrite(rp,LOW); <Br>
+          digitalWrite(rn,LOW); <Br>
+          }<Br>
+          }<Br>
+          }<Br>
+<Br>
+    <Br>    
   </font>
   </body>
