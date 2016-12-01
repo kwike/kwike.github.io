@@ -87,3 +87,49 @@ document.getElementById("ytp").style.paddingTop="10";
  </style>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<script src="/lib.js">
+</script>
+
+<head>
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1e90ff">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#1e90ff">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e90ff">
+ <title>RKwike from Kwike- the youtube channel</title>
+<meta content="width=device-width,initial-scale=1"name=viewport>
+<meta name="description" content="Get YouTube gameplay of latest games on ipad with rkwike the youtube channel">    </head>
+<body id="body" onscroll="myFunction()" onload="loaded()">
+ 
+ <div id="cooli" style="background-color:orange;"><h1>RKwike</h1>
+  <span id="description">For Kwike</span></div>
+<div id="down"></div>
+<div id="infbox">
+<h3>our developers-<br>youtube gameplays:<br>Gamerspoint<br>RKwike <br>apps services:<br>
+ appifiers
+ </h3>
+	</div>
+  <div w3-include-html="https://kwike.github.io/trend.html"></div>
+<span id="menuincluded" w3-include-html="https://kwike.github.io/menu.html"></span>
+<script>
+w3IncludeHTML();
+</script>
+                                               <script type="text/javascript">
+function myFunction() {
+    var elmnt = document.getElementById("body");
+    
+    var y = elmnt.scrollTop;
+    
+if (y > 120) {
+document.getElementById("ytp").style.visibility="visible";
+document.getElementById("ytp").style.opacity="1";
+document.getElementById("ytp").style.paddingTop="10";
+}
+}</script>
+
+</body>
+</html>
