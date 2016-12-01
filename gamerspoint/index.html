@@ -1,71 +1,32 @@
+<!DOCTYPE html>
 <html>
-<!-- basicblue trademark is rgb(63,72,204); -->
+<script src="/lib.js">
+</script>
+
 <head>
-<title>Gamerspoint</title>
-<meta content="width=device-width,initial-
-scale=1"name=viewport>
-<meta content="Get YouTube gameplay and reviews as well as utility and essential apps and games for Android and online."name=description>
-<link href=dashinfinity.gif rel="shortcut icon">
- <link href=lib.css rel=stylesheet>
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel=stylesheet>
- <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One"rel=stylesheet>
-<body id="body" onscroll="myFunction()">
-<nav >
-<strong id="heading"><a >Kwike</a></strong>
-<strong id="menub" onclick="openNav()"><i class="material-icons">&#xE5D2;</i></strong></nav>
-<div id="menu"><strong onclick="closeNav()">
-<i class="material-icons" id="close">&#xE5CD;</i>
-</strong>
-<table>
-<tr>
-<tr><th><a id="menuh" href="/">Kwike</a></th></tr><tr>
-<td><a id="menuc" href="/rkwike">RKwike</a></td></tr><tr>
-<td><a id="menuc" href="/gamerspoint">Gamerspoint</a></td></tr><tr>
-<td><a id="menuc" href="/appifier">Appifier</a></td></tr><tr>
-<td><a id="menuc" href="/trends">Trends</a></td></tr><tr>
-<td><a id="menuc" href="/appifier">About</a></td></tr>
-</table>
-
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1e90ff">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#1e90ff">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e90ff">
+ <title>RKwike from Kwike- the youtube channel</title>
+<meta content="width=device-width,initial-scale=1"name=viewport>
+<meta content="Get YouTube gameplay and reviews as well as utility and essential apps and games for Android and online."name=description>    </head>
+<body id="body" onscroll="myFunction()" onload="loaded()">
+ <span id="menuincluded" w3-include-html="https://kwike.github.io/menu.html"></span>
+ <div id="cooli" style="background-color:orange;"><h1>RKwike</h1>
+  <span id="description">For Kwike</span></div>
+ <script >
+w3IncludeHTML();
+</script><div id="down"></div>
+<div id="infbox">
+<img id="ytp" src="icon.bmp" ><h3>best of gaming.Move with me as I go. Become the gaming expert. If you are getting angry with games, just know here how to do so.</h3>
 </div>
-
-<div id="coolintro">
-<h2>Gamerspoint</h2>
-<p2 id="demo">for kwike</p2> 
-<a href="#down"><i class="material-icons" id="arrow">&#xE5DB;</i></a>
-<div class="gradient">
- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"> 
-<defs> 
-<linearGradient id="fade" y2="1" x2="0"> 
-<stop offset="0" stop-color="white" stop-opacity="0"></stop>
- <stop offset="1" stop-color="white" stop-opacity="1"></stop>
- </linearGradient>
- <linearGradient id="gradient" y2="0" x2="1"> 
-<stop offset="0" stop-color="#e91e63" stop-opacity="1"></stop>
- <stop offset="1" stop-color="#00bcd4" stop-opacity="1"></stop> 
-</linearGradient> 
-<mask id="mask" maskContentUnits="objectBoundingBox"> 
-<rect width="1" height="1" fill="url(#fade)"></rect> 
-</mask> 
-</defs> 
-<rect width="100%" height="100%" fill="url(#gradient)" mask="url(#mask)"></rect> 
-</svg> 
-</div>
-</div>
-<div id="down"></div>
-<div id="infob">
-<img id="ytp" src="yt.jpg" ><h3>best of gaming.Move with me as I go. Become the gaming expert.Gaming as part of life is best for me to pass time when I am bored and clams me down if i am angry. If you are getting angry with games, just know here how to do so.</h3>
-</div>
-<div id="infob" class="dodgerblue">
-<img id="ztp" src="game.jpg" ><h3>best of games play . All latest famous games made easy for you now to play. Unable to clear the level, follow us now .</h3>
-</div>
-<script>
-function openNav() {
-    document.getElementById("menu").style.width = "230px";
-}
-
-function closeNav() {
-    document.getElementById("menu").style.width = "0";
-}
+ <div id="infbox" style="background-color:dodgerblue;">
+<img id="ztp" src="/photo.jpg" ><h3>best of games play . All latest to old famous to rare games made easy for you now to play. Unable to clear the level, follow us now .</h3>	
+	</div>
+                                               <script type="text/javascript">
 function myFunction() {
     var elmnt = document.getElementById("body");
     
@@ -76,13 +37,7 @@ document.getElementById("ytp").style.visibility="visible";
 document.getElementById("ytp").style.opacity="1";
 document.getElementById("ytp").style.paddingTop="10";
 }
-if (y > 250) {
-document.getElementById("ztp").style.visibility="visible";
-document.getElementById("ztp").style.opacity="1";
-document.getElementById("ztp").style.paddingTop="10";
-}
+}</script>
 
-}
-</script>
 </body>
 </html>
