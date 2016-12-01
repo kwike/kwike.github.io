@@ -22,5 +22,5 @@ body{margin:0;font-family:'po','century gothic',arial;max-width:100%}
 @media only screen and (max-width:380px){#infob h3{line-height:110%}
 	#ytp,#ztp{padding-left:10px}}
 
-#infbox{background:#00E573;padding-top:30px;padding-bottom:30px;width:100%;}
+#infbox{background:#00E573;padding-top:60px;padding:60px 0px;width:100%;}
 #infbox h3{float:right;right:0;text-align:right;color:white;width:50%;line-height:200%;}
