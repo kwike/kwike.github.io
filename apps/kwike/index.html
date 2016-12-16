@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<script src="/lib.js">
+</script>
+
+
+ <!-- to this part only for home page-->
+ <title>Kwike App</title>
+ <link rel="shortcut icon" href="https://raw.githubusercontent.com/kwike/images/master/rounded_corners.png">
+<meta content="width=device-width,initial-scale=1"name=viewport>
+<meta content="Get YouTube gameplay and reviews as well as utility and essential apps and games for Android and online."name=description>    </head>
+<body id="body" onscroll="myFunction()" onload="loaded()">
+ <span id="menuincluded" w3-include-html="https://kwike.github.io/menu.html"></span>
+ <div id="cooli" style="background-color:green;"><h1>Kwike trends app</h1>
+  <span id="description">Get the Kwike updates from each kwikean
+</span></div>
+ <script >
+w3IncludeHTML();
+</script><div id="down"></div>
+<div id="infbox" style="background-color:dodgerblue">
+<img alt="kwike icon " id="ytp" height="100" src="https://raw.githubusercontent.com/kwike/images/master/c-icon.png"><h3><center><a href="https://drive.google.com/open?id=0BwWWbn-XhPW6TnRDaWRrRldXTW8" style="padding:5px;background-color:green;border-radius:50%;">For android</a></center></h3>
+</div>
+
+
+
+
+ 
+<script type="text/javascript">
+function myFunction() {
+    var elmnt = document.getElementById("body");
+    
+    var y = elmnt.scrollTop;
+    
+if (y > 120) {
+document.getElementById("ytp").style.visibility="visible";
+document.getElementById("ytp").style.opacity="1";
+document.getElementById("ytp").style.paddingTop="10";
+}
+}</script>
+
+</body>
+</html>
