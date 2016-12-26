@@ -1,0 +1,28 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://kwike.github.io/</loc>
+<lastmod>2016-12-26</lastmod>
+<changefreq>weekly</changefreq>
+<image:image>
+<image:loc>
+https://kwike.github.io/kwike/images/master/icon.bmp
+</image:loc>
+<image:title>rkwike icon</image:title>
+<image:caption>rkwike icon</image:caption>
+</image:image>
+</url>
+<url>
+<loc>https://kwike.github.io/rkwike</loc>
+<lastmod>2016-12-26</lastmod>
+<changefreq>weekly</changefreq>
+<image:image>
+<image:loc>
+https://kwike.github.io/kwike/images/master/c-icon.png
+</image:loc>
+<image:title>kwike icon</image:title>
+<image:caption>kwike icon</image:caption>
+</image:image>
+</url>
+</urlset>
